@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment2">
+
+    <fragment
+        android:id="@+id/loginFragment2"
+        android:name="no.michaebr.hiof.propokerclock10.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+
+        <activity
+            android:id="@+id/MainActivity"
+            android:name="no.michaebr.hiof.propokerclock10.MainFragment"
+            android:label="fragment_main"
+            tools:layout="@layout/fragment_main" />
+
+        <action
+            android:id="@+id/action_loginFragment2_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment2_to_mainFragment3"
+            app:destination="@id/mainFragment3" />
+        <action
+            android:id="@+id/action_loginFragment2_to_mainFragment32"
+            app:destination="@id/mainFragment3" />
+        <action
+            android:id="@+id/action_loginFragment2_to_avgStackFragment2"
+            app:destination="@id/avgStackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="no.michaebr.hiof.propokerclock10.ui.login.RegistrationFragment"
+        android:label="RegistrationFragment"
+        tools:layout="@layout/fragment_registration"/>
+    <fragment
+        android:id="@+id/avgStackFragment"
+        android:name="no.michaebr.hiof.propokerclock10.AvgStackFragment"
+        android:label="fragment_avg_stack"
+        tools:layout="@layout/fragment_avg_stack" >
+        <action
+            android:id="@+id/action_avgStackFragment_to_mainFragment33"
+            app:destination="@id/mainFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment3"
+        android:name="no.michaebr.hiof.propokerclock10.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment3_to_blindsFragment"
+            app:destination="@id/blindsFragment" />
+        <action
+            android:id="@+id/action_mainFragment3_to_avgStackFragment"
+            app:destination="@id/avgStackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blindsFragment"
+        android:name="no.michaebr.hiof.propokerclock10.BlindsFragment"
+        android:label="BlindsFragment"
+        tools:layout="@layout/fragment_blinds">
+        <action
+            android:id="@+id/action_blindsFragment_to_mainFragment3"
+            app:destination="@id/mainFragment3" />
+        <action
+            android:id="@+id/action_blindsFragment_to_mainFragment32"
+            app:destination="@id/mainFragment3" />
+    </fragment>
+
+
+</navigation>

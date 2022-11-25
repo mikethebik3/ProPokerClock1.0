@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ProPokerClock1.0</string>
+    <string name="small_blind_1">small_blind_1</string>
+    <string name="small_blind_2">small_blind_1</string>
+    <string name="small_blind_3">small_blind_1</string>
+    <string name="small_blind_4">small_blind_1</string>
+    <string name="small_blind_5">small_blind_1</string>
+    <string name="small_blind_6">small_blind_1</string>
+    <string name="big_blind_1">small_blind_1</string>
+    <string name="big_blind_2">small_blind_1</string>
+    <string name="big_blind_3">small_blind_1</string>
+    <string name="big_blind_4">small_blind_1</string>
+    <string name="big_blind_5">small_blind_1</string>
+    <string name="big_blind_6">small_blind_1</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="skriv_inn_din_stack">Skriv inn din stack</string>
+    <string name="topp_3_stacks_1_thomas_65500_2_michael_42500_3_bernt_38500">Topp 3 stacks #1 - Thomas: 65500 #2 - Michael: 42500 #3 - Bernt: 38500</string>
+    <string name="average_stack_32500">Average Stack: 32500</string>
+    <string name="stacks">Stacks</string>
+    <string name="propokerclock">ProPokerClock</string>
+    <string name="tilbake">Tilbake</string>
+</resources>

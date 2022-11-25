@@ -1,0 +1,65 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="Blinde instillinger"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:title="Velg ønsket varsel"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Sync stack størrelse automatisk" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="Last ned resultater" />
+
+    </PreferenceCategory><PreferenceCategory
+        app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="Vis aktiv status"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            app:key="reply"
+            app:title="Legg til ønsket metode"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:defaultValue="reply"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory><PreferenceCategory
+        app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="Sync kontakter automatisk"/>
+
+        <SwitchPreferenceCompat
+            app:key="attachment"
+            app:title="Lagre data"
+            app:summaryOn="@string/attachment_summary_on"
+            app:summaryOff="@string/attachment_summary_off"
+            app:dependency="sync"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
